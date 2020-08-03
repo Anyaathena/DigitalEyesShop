@@ -1,0 +1,96 @@
+﻿@model IEnumerable<WebApplication1.Models.Eye>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>會員資料</h2>
+
+<p>
+    @Html.ActionLink("新增客戶資料", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Account)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Notes)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RightEyeMyopia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RightEyeAstigmaticAngel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RightEyeAstigmatic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeftEyeMyopia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeftEyeAstigmaticAngel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LeftEyeAstigmatic)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrameName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.MyTime)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Account)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Notes)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RightEyeMyopia)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RightEyeAstigmaticAngel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.RightEyeAstigmatic)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LeftEyeMyopia)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LeftEyeAstigmaticAngel)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LeftEyeAstigmatic)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.FrameName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Price)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.MyTime)
+    </td>
+
+    <td>
+        @Html.ActionLink("修改", "Edit", new { id = item.Account }) |
+        @Html.ActionLink("明細", "Details", new { id = item.Account }) |
+        @*@Html.ActionLink("刪除", "Delete", new { id = item.Account })*@
+    </td>
+</tr>
+}
+
+</table>

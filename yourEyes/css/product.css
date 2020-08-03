@@ -1,0 +1,123 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif,Microsoft YaHei;
+}
+
+#ccc {
+    width: 100%;
+    height: auto;
+}
+
+.anyamain {
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 20vh;
+}
+
+.anyaproduct {
+    width: 50%;
+    height: auto;
+}
+
+.picpic {
+    width: 90%;
+}
+
+.anyaprice {
+    font-size: large;
+}
+
+.anyaaside {
+    width: 50%;
+    height: auto;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: 2px #000 solid;
+    margin-left: 40px;
+    padding-left: 50px;
+}
+
+.ccc > .anyamain > .anyaaside > .detail {
+    display: flex;
+}
+
+    .ccc > .anyamain > .anyaaside > .detail > div {
+        display: flex;
+        margin: 5px 20px;
+        color: gray;
+    }
+
+.anyaaside > div > p {
+    margin-top: 20px;
+}
+
+.anyaaside > div > .anyacheckup {
+    margin-top: 20px;
+}
+
+a.endProduct{
+    color: purple;
+    font-size:10px;
+}
+
+.putProduct > a {
+    color: forestgreen;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.takeProduct > a {
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+/*.anyacheckup {
+    font-weight: bold;
+    background-color: #e25f13;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity:1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .anyacheckup:hover {
+        opacity: 1
+    }*/
+
+
+/*
+.takeProduct {
+    font-weight: bold;
+    color: black;
+    background-color: orange;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 20px;
+    margin: 4px 2px;
+    opacity: 0.6;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.takeProduct {
+    opacity: 1;
+}*/
+.anyabox3Font {
+    padding-top: 20%;
+}

@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="eyesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Eyes">
+          <Key>
+            <PropertyRef Name="Account" />
+          </Key>
+          <Property Name="Account" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="RightEyeMyopia" Type="float" Nullable="false" />
+          <Property Name="RightEyeAstigmaticAngel" Type="float" Nullable="false" />
+          <Property Name="RightEyeAstigmatic" Type="float" Nullable="false" />
+          <Property Name="LeftEyeMyopia" Type="float" Nullable="false" />
+          <Property Name="LeftEyeAstigmaticAngel" Type="float" Nullable="false" />
+          <Property Name="LeftEyeAstigmatic" Type="float" Nullable="false" />
+          <Property Name="Price" Type="float" Nullable="false" />
+          <Property Name="FrameName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MyTime" Type="float" Nullable="false" />
+          <Property Name="Notes" Type="nvarchar" MaxLength="255" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="eyesModelStoreContainer">
+          <EntitySet Name="Eyes" EntityType="Self.Eyes" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="eyesModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Eye">
+          <Key>
+            <PropertyRef Name="Account" />
+          </Key>
+          <Property Name="Account" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="RightEyeMyopia" Type="Double" Nullable="false" />
+          <Property Name="RightEyeAstigmaticAngel" Type="Double" Nullable="false" />
+          <Property Name="RightEyeAstigmatic" Type="Double" Nullable="false" />
+          <Property Name="LeftEyeMyopia" Type="Double" Nullable="false" />
+          <Property Name="LeftEyeAstigmaticAngel" Type="Double" Nullable="false" />
+          <Property Name="LeftEyeAstigmatic" Type="Double" Nullable="false" />
+          <Property Name="Price" Type="Double" Nullable="false" />
+          <Property Name="FrameName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MyTime" Type="Double" Nullable="false" />
+          <Property Name="Notes" Type="String" MaxLength="255" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="eyesEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Eyes" EntityType="Self.Eye" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="eyesModelStoreContainer" CdmEntityContainer="eyesEntities">
+          <EntitySetMapping Name="Eyes">
+            <EntityTypeMapping TypeName="eyesModel.Eye">
+              <MappingFragment StoreEntitySet="Eyes">
+                <ScalarProperty Name="Account" ColumnName="Account" />
+                <ScalarProperty Name="RightEyeMyopia" ColumnName="RightEyeMyopia" />
+                <ScalarProperty Name="RightEyeAstigmaticAngel" ColumnName="RightEyeAstigmaticAngel" />
+                <ScalarProperty Name="RightEyeAstigmatic" ColumnName="RightEyeAstigmatic" />
+                <ScalarProperty Name="LeftEyeMyopia" ColumnName="LeftEyeMyopia" />
+                <ScalarProperty Name="LeftEyeAstigmaticAngel" ColumnName="LeftEyeAstigmaticAngel" />
+                <ScalarProperty Name="LeftEyeAstigmatic" ColumnName="LeftEyeAstigmatic" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+                <ScalarProperty Name="FrameName" ColumnName="FrameName" />
+                <ScalarProperty Name="MyTime" ColumnName="MyTime" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="無" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

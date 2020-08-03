@@ -1,0 +1,204 @@
+.layoutthree {
+    width: 80%;
+    padding:20px;
+    margin: 50px auto;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    /* flex-direction: column; */
+    /* 主軸 */
+    justify-content: space-around; 
+    /* 次軸 */
+    /* align-items: center;      */
+    flex-wrap: wrap;   /* 自動換行 1111*/
+}
+
+.layoutthree img {
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+    width:100%;
+}
+
+/* box */
+.anyabox3:hover{
+    transform: scale(1.1,1);
+    z-index:2 ;
+}
+
+/*.anyabox3 {
+    margin:0 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);*/
+    /* background-color: pink; */
+    /*width: 20%;
+    transition: 1s;
+}*/
+
+
+
+/*----*/
+.anyabox3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 250px;
+    margin: auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.aaaaaprice {
+    color: grey;
+    font-size: 22px;
+}
+
+.anyabox3 > p > input {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+    .anyabox3 > p > input:hover {
+        opacity: 0.7;
+    }
+/*----*/
+
+
+
+/* box */
+.layouteyes {
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    /* flex-direction: column; */
+    /* 主軸 */
+    justify-content: space-around;
+    /* 次軸 */
+    /* align-items: center;      */
+    flex-wrap: wrap; /* 自動換行 */
+}
+
+.layouteyes img {
+    display: block;
+    border-radius: 10px;
+    margin-top: 80px;
+    width:100%;
+}
+
+/* .anyabox4:hover{
+    transform: scale(1.1,1);
+    z-index: 2;
+} */
+
+.anyabox4 {
+    margin:0 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.1);
+    /* background-color: pink; */
+    width: 22%;
+    transition: 1s;
+    position: relative;
+}
+
+.anyabox4 > .anyaoverlay:hover {
+    transform: scale(1.1,1);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background:hsla(34, 88%, 48%, 0.3);
+    opacity: 1;
+}
+
+.anyaoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .anyaoverlay {
+    /* opacity: 1; */
+  }
+  
+  .anyatext {
+    color: darkred;
+    font-size: 50px;
+    font-family: fantasy;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+/* containerpart2 */
+
+.containerPart2 {
+    padding: 64px;
+  }
+  
+  .anyarow:after {
+    content: "";
+    display: table;
+    clear: both
+  }
+  
+  .column-66 {
+    float: right;
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .column-33 {
+    float: left;
+    width: 30%;
+    padding: 20px;
+  }
+  
+  .anyalarge-font {
+    font-size: 48px;
+  }
+  
+  .anyaxlarge-font {
+    font-size: 64px
+  }
+  
+  .frontPbutton {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+  }
+  
+  .frontPimg {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  @media screen and (max-width: 1000px) {
+    .column-66,
+    .column-33 {
+      width: 100%;
+      text-align: center;
+    }
+    .ifrontPimgmg {
+      margin: auto;
+    }
+  }

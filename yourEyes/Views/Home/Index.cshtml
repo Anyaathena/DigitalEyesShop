@@ -1,0 +1,296 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<link href="~/css/threepic.css" rel="stylesheet">
+<link href="~/css/slideshowCSS.css" rel="stylesheet">
+<link href="~/css/fakeindex.css" rel="stylesheet">
+
+
+
+
+
+
+<!-- 輪播廣告 Slideshow-->
+<div style="box-sizing: border-box; ">
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="~/images/AD01博士倫.jpg"  style=" width:100%; height: 50vh; object-fit: cover;">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="~/images/AD02美若康.jpg"  style="width:100%; height: 50vh;object-fit: cover;">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="~/images/AD03墨鏡.png"  style="width: 100%; height: 50vh;object-fit: cover; ">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="~/images/AD04美若康.jpg"  style="width: 100%; height: 50vh; object-fit: cover;">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <br>
+        <br>
+    </div>
+</div>
+
+
+
+
+
+<div class="rrr";>
+    <!-- Clarity Section -->
+    <div class="containerPart2" style="background-color:#f1f1f1">
+        <div class="anyarow">
+            <div class="column-33">
+                <img class="frontPimg" src="~/Upload/kkkk.png" alt=""    ;>
+            </div>
+            <div class="column-66">
+                <h1 class="anyaxlarge-font"><b>Digital eye Shop</b></h1>
+                <h1 class="anyalarge-font" style="color:orangered;"><b>關於數位眼鏡店的啟發?</b></h1>
+                <p>
+                    <span style="font-size:24px">欲改變傳統眼鏡店現況</span> 大部分年長的店主都
+                    手帳的方式紀錄客戶資料
+                    ，我們想設計一個網站來改變現狀，轉型成數位管理加護資料、並且擁有會員驗證的功能網站，未來希望能提供給更多店家使用!
+                </p>
+                <button class="frontPbutton" style="background-color:orangered">了解更多</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@*三張圖*@
+
+<!-- SECTION -->
+<div class="section ">
+
+
+    <!-- row -->
+    <div class="row hot-post">
+
+
+
+
+        <div class="col-md-7 hot-post-left">
+            <!-- post -->
+            <div class="post post-thumb 1char" style=" height: 90vh; width:50vw;">
+                <a class="post-img" href="blog-post.html"><img src="~/images/doctoreye.jpg" alt="" style="height: 90vh; ; width:50vw"></a>
+                <div class="post-body">
+                    <div class="post-category">
+                        <a href="category.html">預約保養</a>
+                    </div>
+                    <h3 class="post-title title-lg"><a href="blog-post.html">全台第一家數位眼鏡行，省時省力又省錢</a></h3>
+                    <ul class="post-meta">
+                        <li><a href="author.html">全新開幕</a></li>
+                        <li>01 Aug 2020</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /post -->
+        </div>
+
+
+
+
+        <div class="col-md-5 hot-post-right">
+            <!-- post -->
+            <div class="post post-thumb 2char" style=" height: 40vh ; width:36vw;">
+                <a class="post-img" style=" height: 40vh ; width:36vw;"><img src="~/images/eye1.jpg" alt=""></a>
+                <div class="post-body">
+                    <div class="post-category">
+                        <a href="category.html">定期保養</a>
+                    </div>
+                    <h3 class="post-title"><a href="#">客戶到店預約</a></h3>
+                    <ul class="post-meta">
+                        <li><a href="author.html">開放日期</a></li>
+                        <li>20 Aug 2020</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /post -->
+
+
+
+
+
+
+
+
+
+
+            <div class="col-md-5 ">
+                <!-- post -->
+                <div class="post post-thumb 3char " style=" height:40vh; width:36vw" ;>
+                    <a class="post-img" style=" height:40vh; width:36vw; position:relative; left:-15px ;top:23px; " ;href="blog-post.html"><img src="~/images/len1.jpg" alt=""></a>
+                    <div class="post-body">
+                        <div class="post-category">
+                            <a href="category.html">定期保養</a>
+                        </div>
+                        <h3 class="post-title"><a href="blog-post.html">訂單進度查詢</a></h3>
+                        <ul class="post-meta">
+                            <li><a href="author.html">開放查詢日期</a></li>
+                            <li>10 Aug 2020</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /post -->
+            </div>
+
+
+
+        </div>
+        <!-- /row -->
+
+    </div>
+    <!-- /SECTION -->
+</div>
+
+
+
+<!-- 最新商品1 -->
+<br />
+<h1>促銷商品</h1>
+<div class="layoutthree">
+
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/10"><img src="~/Upload/BURBERRY 街頭槓桿皮革腳眉框.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$6700</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/10'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/16"><img src="~/Upload/GUCCI Silver Tiger巴黎城市.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$9240</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/16'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/23"><img src="~/Upload/GUCCI 復古大圓方框經典金.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$8800</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/23'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/24"><img src="~/Upload/GUCCI 復古大圓方框羅蘭槍.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$7800</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/24'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/22"><img src="~/Upload/GUCCI 悠翔天際飛官款.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$9100</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/22'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/25"><img src="~/Upload/GUCCI 新潮復古橢圓框.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$9100</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/25'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/7"><img src="~/Upload/BURBERRY 時尚金蔥透明鏡腳 暗透藍.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$7600</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/7'"></p>
+    </div>
+    <div class="anyabox3">
+        <a href="https://localhost:44338/Item/Item/14"><img src="~/Upload/BURBERRY 摩登優雅蝶型款 玳瑁色.jpg" alt="Denim Jeans" style="width:100%"></a>
+        <h3>BURBERRY 街頭槓桿皮革腳</h3>
+        <p class="aaaaaprice">$7100</p>
+        <p><input type="button" value="商品預覽" onclick="location.href='https://localhost:44338/Item/Item/14'"></p>
+    </div>
+
+</div>
+
+
+<h1>隱型眼鏡專區</h1>
+<div class="layouteyes" ;><a href="https://localhost:44338/Item/Item/73">
+    <div class="anyabox4">
+        <img src="~/Upload/博士倫 蕾絲漾眸彩色軟式隱形眼鏡(曖昧可可).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+        </a></div>
+    </div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/74">
+        <img src="~/Upload/博士倫 蕾絲漾眸彩色軟式隱形眼鏡(深情黑).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/71">
+        <img src="~/Upload/睛靚 玩美彩色隱形眼鏡(焦糖可麗露).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/72">
+        <img src="~/Upload/睛靚 玩美彩色隱形眼鏡(青檸三重奏).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/63">
+        <img src="~/Upload/MIMA綺娜彩色月拋隱形眼鏡 水星巧克(1片裝).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/64">
+        <img src="~/Upload/MIMA綺娜彩色月拋隱形眼鏡 北極星黑(1片裝).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/60">
+        <img src="~/Upload/MIMA綺娜彩色月拋隱形眼鏡 天王星棕(1片裝).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+<div class="anyabox4">
+    <a href="https://localhost:44338/Item/Item/65">
+        <img src="~/Upload/MIMA綺娜彩色月拋隱形眼鏡 金微笑(1片裝).jpg">
+        <div class="anyaoverlay">
+            <div class="anyatext">buy it!</div>
+    </a></div>
+</div>
+</div>
+
+
+
+
+<script src="~/libs/slideshowJS.js"></script>

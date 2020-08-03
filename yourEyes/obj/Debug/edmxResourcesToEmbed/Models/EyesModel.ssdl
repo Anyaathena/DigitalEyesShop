@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="eyesModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Eyes">
+    <Key>
+      <PropertyRef Name="Account" />
+    </Key>
+    <Property Name="Account" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="RightEyeMyopia" Type="float" Nullable="false" />
+    <Property Name="RightEyeAstigmaticAngel" Type="float" Nullable="false" />
+    <Property Name="RightEyeAstigmatic" Type="float" Nullable="false" />
+    <Property Name="LeftEyeMyopia" Type="float" Nullable="false" />
+    <Property Name="LeftEyeAstigmaticAngel" Type="float" Nullable="false" />
+    <Property Name="LeftEyeAstigmatic" Type="float" Nullable="false" />
+    <Property Name="Price" Type="float" Nullable="false" />
+    <Property Name="FrameName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="MyTime" Type="float" Nullable="false" />
+    <Property Name="Notes" Type="nvarchar" MaxLength="255" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="eyesModelStoreContainer">
+    <EntitySet Name="Eyes" EntityType="Self.Eyes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="eyesModelStoreContainer" CdmEntityContainer="eyesEntities">
+    <EntitySetMapping Name="Eyes">
+      <EntityTypeMapping TypeName="eyesModel.Eye">
+        <MappingFragment StoreEntitySet="Eyes">
+          <ScalarProperty Name="Account" ColumnName="Account" />
+          <ScalarProperty Name="RightEyeMyopia" ColumnName="RightEyeMyopia" />
+          <ScalarProperty Name="RightEyeAstigmaticAngel" ColumnName="RightEyeAstigmaticAngel" />
+          <ScalarProperty Name="RightEyeAstigmatic" ColumnName="RightEyeAstigmatic" />
+          <ScalarProperty Name="LeftEyeMyopia" ColumnName="LeftEyeMyopia" />
+          <ScalarProperty Name="LeftEyeAstigmaticAngel" ColumnName="LeftEyeAstigmaticAngel" />
+          <ScalarProperty Name="LeftEyeAstigmatic" ColumnName="LeftEyeAstigmatic" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="FrameName" ColumnName="FrameName" />
+          <ScalarProperty Name="MyTime" ColumnName="MyTime" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

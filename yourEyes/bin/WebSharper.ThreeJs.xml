@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>WebSharper.ThreeJs</name>
+  </assembly>
+  <member name="M:WebSharper.ThreeJs.THREE.BufferGeometry.Merge">
+    <summary>Does not implemented yet!</summary>
+  </member>
+</doc>

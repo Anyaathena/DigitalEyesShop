@@ -1,0 +1,100 @@
+﻿@model WebApplication1.Models.Eye
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>資訊明細</h2>
+
+<div>
+    <h4>客戶資訊</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        @*姓名*@
+        <dt>
+            @Html.DisplayNameFor(model => model.Notes)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Notes)
+        </dd>
+        @*鏡框*@
+        <dt>
+            @Html.DisplayNameFor(model => model.FrameName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FrameName)
+        </dd>
+        @*價格*@
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RightEyeMyopia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RightEyeMyopia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RightEyeAstigmaticAngel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RightEyeAstigmaticAngel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RightEyeAstigmatic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RightEyeAstigmatic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeftEyeMyopia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeftEyeMyopia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeftEyeAstigmaticAngel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeftEyeAstigmaticAngel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LeftEyeAstigmatic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LeftEyeAstigmatic)
+        </dd>
+
+        @*時間*@
+        <dt>
+            @Html.DisplayNameFor(model => model.MyTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MyTime)
+        </dd>
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("修改", "Edit", new { id = Model.Account }) |
+    @Html.ActionLink("回到選單", "Index")
+</p>

@@ -1,0 +1,232 @@
+﻿/*----------------------------*\
+    section
+\*----------------------------*/
+
+.section {
+    margin-top:3%;
+}
+
+.section-row {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+    .section-title .title {
+        position: relative;
+        display: inline-block;
+        background-color: #fff;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-right: 10px;
+        z-index: 20;
+    }
+
+    .section-title:after {
+        
+        display: inline-block;
+        height: 2px;
+        background-color: #e8eaed;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 10px;
+        z-index: 10;
+    }
+
+/*=========================================================
+    POST
+===========================================================*/
+
+
+
+
+
+
+
+
+.post {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+    .post .post-body {
+        position: relative;
+        margin: 0px 0px 0px 0px;
+        
+        background: #fff;
+        z-index: 10;
+    }
+
+    .post .post-img {
+        display: block;
+        overflow: hidden;
+    }
+
+.post-img > img {
+    width: 100%;
+    -webkit-transition: 1.6s -webkit-transform;
+    transition: 1.6s -webkit-transform;
+    transition: 1.6s transform;
+    transition: 1.6s transform, 1.6s -webkit-transform;
+}
+
+.post-img:hover > img {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.post .post-title {
+    font-size: 18px;
+}
+
+    .post .post-title.title-sm {
+        font-size: 16px;
+    }
+
+    .post .post-title.title-lg {
+        font-size: 26px    }
+
+
+
+.post-category a {
+    color: #ee4266;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+    .post-category a:after {
+        content: ',';
+        display: inline-block;
+    }
+
+ 
+
+
+
+.post-meta li {
+    display: inline-block;
+    color: #97989b;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+    .post-meta li a {
+        color: #97989b;
+        font-weight: 700;
+    }
+
+        .post-meta li a:hover, .post-meta li a:focus {
+            color: #ee4266;
+        }
+
+
+    .post-meta li:last-child:after {
+        display: none;
+    }
+/*----------------------------*\
+    post thumb
+\*----------------------------*/
+
+.post.post-thumb .post-img:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(27, 28, 30, 0)), color-stop(90%, rgba(27, 28, 30, 0.8)));
+    background: linear-gradient(180deg, rgba(27, 28, 30, 0) 0%, rgba(27, 28, 30, 0.8) 90%);
+}
+
+.post.post-thumb .post-body {
+    position: absolute;
+    margin: 0px;
+    padding: 0px 4%;
+    z-index: 20;
+    bottom: 5%;
+    background-color: transparent;
+}
+
+.post.post-thumb .post-title a {
+    color: #fff;
+}
+
+    .post.post-thumb .post-title a:hover, .post.post-thumb .post-title a:focus {
+        color: #ee4266;
+    }
+
+.post.post-thumb .post-meta li {
+    color: #fff;
+}
+
+    .post.post-thumb .post-meta li a {
+        color: #fff;
+    }
+
+        .post.post-thumb .post-meta li a:hover, .post.post-thumb .post-meta li a:focus {
+            color: #ee4266;
+        }
+
+/*----------------------------*\
+      post small
+  \*----------------------------*/
+
+.post.post-sm .post-body {
+    margin: 0px 0px 0px;
+    background: transparent;
+    padding: 0;
+}
+/*----------------------------*\
+    post widget
+\*----------------------------*/
+
+/*.post.post-widget:after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
+
+.post.post-widget .post-img {
+    /*float: left;*/
+    width: 130px;
+}
+
+.post.post-widget .post-body {
+    position: relative;
+    background: transparent;
+    margin: 0px 0px 0px 150px;
+    padding: 0;
+}
+
+.post.post-widget .post-title {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+/*----------------------------*\
+      post row
+  \*----------------------------*/
+
+/*.post.post-row:after {
+    content: '';
+    display: table;
+    clear: both;
+}*/
+
+.post.post-row .post-img {
+    width: 38%;
+  
+}
+
+.post.post-row .post-body {
+    margin: 0px 0px 0px calc(40% + 30px);
+    padding: 0;
+}

@@ -1,0 +1,110 @@
+﻿@model WebApplication1.ViewModels.ItemDetailViewModel
+
+@{
+    ViewBag.Title = "商品資料-" + Model.Data.Name;
+}
+
+<link href="~/css/product.css" rel="stylesheet">
+<link href="~/css/zoom.css" rel="stylesheet">
+<script src="~/css/zoom.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<div id="ccc">
+    <div class="anyamain">
+        <div class="anyaproduct">
+            <br />
+            @*商品照片*@
+            @*<img class="picpic" src="@Html.Encode(Url.Content("~/Upload/" + Model.Data.Image))" />*@
+            <div class="img-zoom-container">
+                <img id="myimage" class="picpic" src="@Html.Encode(Url.Content("~/Upload/" + Model.Data.Image))" />
+                <div id="myresult" class="img-zoom-result"></div>
+            </div>
+            <br />
+        </div>
+
+        <div class="anyaaside">
+            @*商品名稱*@
+            <h1>@Model.Data.Name</h1>
+            <div class="anyadescription">
+                <p style="font-size:medium; color:#FFA631;">
+                    ★英國皇室御用
+                    ★英國百年經典品牌
+                    ★歐洲奢華精品
+                </p>
+            </div>
+            <br />
+            <div class="detail">
+                <div class="anyaprice">
+                    @*顯示價格欄位名稱及資料*@
+                    @Html.DisplayNameFor(model => model.Data.Price)：@Html.DisplayTextFor(model => model.Data.Price)
+                </div>
+
+                <br><br>
+                <div>
+                    <P style="font-size:large" ;>商品狀態：貨源稀缺</P>
+                </div>
+            </div>
+            <br><br>
+                <div>
+                    <label for="qty" style="font-size:large; font-weight:normal;">商品數量：</label>
+                    <select name="qty" style="font-size:large">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br><br>
+                    <br />
+                    @*限制須使用者登入才顯示購物車功能*@
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        if (Model.InCart)
+                        {
+                            <div class="takeProduct">
+                                @Html.ActionLink("購物車中取出", "Pop", "Cart"
+                                                       , new { Id = Model.Data.Id, toPage = "Item" }, null)
+                            </div>
+                        }
+                        else
+                        {
+
+                            <div class="putProduct">
+                                @Html.ActionLink("放入購物車中", "Put", "Cart"
+       , new { Id = Model.Data.Id, toPage = "Item" }, null)
+                            </div>
+                        }
+                        if (User.IsInRole("Admin"))
+                        {
+                            <br />
+                            @Html.ActionLink("下架商品", "Delete"
+                                , new { Id = Model.Data.Id }, new{ @class = "endProduct" })
+                        }
+                    }
+                    @*若無登入狀態，無法使用此功能，顯示登入超連結*@
+                    else
+                    {
+                        <text>要使用購物車請先</text>
+                        @Html.ActionLink("登入", "Login", "Members")
+                    }
+                </div>
+            <br>
+            <br>
+            <div style="display:flex;">
+                <div style="padding-left:25px;"><i class='fab fa-cc-apple-pay' style='font-size:36px; color:red;'></i></div>
+                <div style="padding-left:25px;"><i class='fab fa-cc-visa' style='font-size:36px; color:sandybrown'></i></div>
+                <div style="padding-left:25px;"><i class='fab fa-cc-amazon-pay' style='font-size:36px'></i></div>
+                <div style="padding-left:25px;"><i class='fab fa-alipay' style='font-size:48px;color:cornflowerblue'></i></div>
+                <div style="padding-left:25px;"><i class='fab fa-cc-jcb' style='font-size:48px;color:forestgreen'></i></div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    // Initiate zoom effect:
+    imageZoom("myimage", "myresult");
+</script>
+
+
